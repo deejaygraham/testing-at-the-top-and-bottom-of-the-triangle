@@ -1,4 +1,5 @@
-# testing-at-the-top-and-bottom-of-the-triangle
+# Testing at the Top and Bottom of the Triangle
+
 A session on testing web applications and React components using cypress.
 
 ## Abstract
