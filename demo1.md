@@ -2,6 +2,7 @@
 
 ## Create a node project 
 
+docs for cypress are very good. https://docs.cypress.io/guides/overview/why-cypress
 md bbce2e
 cd bbce2e
 
