@@ -27,6 +27,11 @@ Add a scripts section to your package.json
     "test": "npx cypress run --e2e --browser chrome"
   }
   
+  e2e folder for end to end
+  
+  tests normally thing.test.js
+  here they are thing.cy.js
+  
   Open cypress.config.js and add a baseUrl: 'http://bbc.co.uk/'
   If we were testing a local deployment, we need to start that first. 
   
