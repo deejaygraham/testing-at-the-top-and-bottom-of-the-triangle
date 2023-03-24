@@ -45,6 +45,7 @@ Add a scripts section to your package.json
   Welcome to the BBC
   
   We need a sign in page. Perhaps we can find that link and click it.
+  First time we save, notice that the page reloads and runs the tests again.
   
   cy.visit('/my/page/path')
   cy.get('[data-testid="selector-in-question"]')
