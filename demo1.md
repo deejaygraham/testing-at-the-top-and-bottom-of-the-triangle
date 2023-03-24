@@ -51,7 +51,7 @@ Add a scripts section to your package.json
   cy.get('[data-testid="selector-in-question"]')
   cy.get('[data-testid="selector-in-question"]').debug() - shown in dev tools
   
-  
+  Highlight step and it shows where it was found too.
   Search BBC
   Type nature, hit return and scroll something into place.
   
@@ -73,19 +73,28 @@ Add a scripts section to your package.json
   May want to look at markup here? 
   
   Recommendations for search - stolen from cypress
+  
 Don't target elements based on CSS attributes such as: id, class, tag
+
 Don't target elements that may change their textContent
+
 Add data-* attributes to make it easier to target elements
 
 <button 
 data-cy="submit" >
   
   cy.get('button').click()	 Never	Worst - too generic, no context.
+    
 cy.get('.btn.btn-large').click()	 Never	Bad. Coupled to styling. Highly subject to change.
+    
 cy.get('#main').click()	 Sparingly	Better. But still coupled to styling or JS event listeners.
+    
 cy.get('[name="submission"]').click()	 Sparingly	Coupled to the name attribute which has HTML semantics.
+    
 cy.contains('Submit').click()	 Depends	Much better. But still coupled to text content that may change.
+    
 cy.get('[data-cy="submit"]').click()	 Always	Best. Isolated from all changes.
+    
   
   Check title, 
   Look for text, 
